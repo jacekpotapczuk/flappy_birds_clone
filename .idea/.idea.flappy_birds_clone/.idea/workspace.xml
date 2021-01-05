@@ -25,8 +25,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovementTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShowFPS.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -45,6 +44,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ShowFPS.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MovementTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       </list>
     </option>
@@ -90,6 +90,7 @@
       <updated>1609704931281</updated>
       <workItem from="1609704937086" duration="5378000" />
       <workItem from="1609763379596" duration="5251000" />
+      <workItem from="1609844216283" duration="3770000" />
     </task>
     <servers />
   </component>

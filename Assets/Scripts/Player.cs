@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D), typeof(Animator))]
 public class Player : MonoBehaviour
 {
     [SerializeField] private PipesControler pipesControler;
@@ -16,11 +16,13 @@ public class Player : MonoBehaviour
     private int score = 0;
 
     private Rigidbody2D rigidbody;
+    private Animator animator;
 
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         Physics2D.gravity = new Vector3(0f, -20f, 0f);
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -29,6 +31,11 @@ public class Player : MonoBehaviour
         if (Input.anyKeyDown && EventSystem.current.currentSelectedGameObject == null)
         {
             rigidbody.velocity = new Vector2(0f, clickForce);
+            animator.SetBool("flap", true);
+        }
+        else
+        {
+            animator.SetBool("flap", false);
         }
     }
 
