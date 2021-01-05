@@ -23,7 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovementTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovementTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PipesControler.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,16 +38,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovementTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pipe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShowFPS.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ShowFPS.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MovementTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PipesControler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RepeatScroll.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       </list>
     </option>
@@ -90,7 +95,7 @@
       <updated>1609704931281</updated>
       <workItem from="1609704937086" duration="5378000" />
       <workItem from="1609763379596" duration="5251000" />
-      <workItem from="1609844216283" duration="3770000" />
+      <workItem from="1609844216283" duration="7829000" />
     </task>
     <servers />
   </component>
@@ -119,5 +124,9 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2628" y="345" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609763982578" />
+    <state x="2014" y="134" width="1590" height="1027" key="dock-window-1" timestamp="1609852673980">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2014" y="134" width="1590" height="1027" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609852673980" />
   </component>
 </project>

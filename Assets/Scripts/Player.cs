@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D), typeof(Animator))]
 public class Player : MonoBehaviour
 {
-    [SerializeField] private PipesControler pipesControler;
+    [SerializeField] private RepeatScroll[] scrollingObjects;
     
     [SerializeField, Range(0f, 20f)]
     private float clickForce = 5f;
@@ -47,7 +47,11 @@ public class Player : MonoBehaviour
         transform.localPosition = new Vector3(-2f, 1.5f, 0f);
         score = 0;
         UpdateScoreText();
-        pipesControler.Restart();
+
+        for (int i = 0; i < scrollingObjects.Length; i++)
+        {
+            scrollingObjects[i].ResetPosition();
+        }
     }
 
 
