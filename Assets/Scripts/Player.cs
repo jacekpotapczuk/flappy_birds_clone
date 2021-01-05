@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         Physics2D.gravity = new Vector3(0f, -20f, 0f);
         animator = GetComponent<Animator>();
+        Restart();
     }
 
     private void Update()
@@ -43,15 +44,8 @@ public class Player : MonoBehaviour
     {
         if (godMode)
             return;
-                
-        transform.localPosition = new Vector3(-2f, 1.5f, 0f);
-        score = 0;
-        UpdateScoreText();
 
-        for (int i = 0; i < scrollingObjects.Length; i++)
-        {
-            scrollingObjects[i].ResetPosition();
-        }
+        GameOverMenu.Instance.ShowEndGameMenu();
     }
 
 
@@ -62,6 +56,9 @@ public class Player : MonoBehaviour
 
     public void AddScore()
     {
+        //AudioManager.Instance.PlayOneShot("coin");
+        AudioManager.Instance.Play("coin");
+
         score += 1;
         UpdateScoreText();
     }
@@ -69,6 +66,20 @@ public class Player : MonoBehaviour
     private void UpdateScoreText()
     {
         scoreText.text = score.ToString();
+    }
+
+    private void Restart()
+    {        
+        transform.localPosition = new Vector3(-1.65f, 1.25f, 0f);
+        score = 0;
+        AudioManager.Instance.Play("main");
+        UpdateScoreText();
+
+        for (int i = 0; i < scrollingObjects.Length; i++)
+        {
+            scrollingObjects[i].ResetPosition();
+        }
+        
     }
     
 }
