@@ -10,11 +10,13 @@ public class GameOverMenu : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        pauseMenuUI.SetActive(false);
     }
 
     public void ShowEndGameMenu()
     {
         AudioManager.Instance.MuteAll();
+        AudioManager.Instance.Play("fail");
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
     }

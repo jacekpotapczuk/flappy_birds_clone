@@ -9,6 +9,9 @@ public class Sound
     [Range(-3f, 3f)] public float pitch = 1f;
     public bool loop;
     
+    
+    
     [HideInInspector] public AudioSource source;
-
+    [HideInInspector] public float actualVolume;  // volume is like default value, this one is used when for example audio is muted 
 }
+       

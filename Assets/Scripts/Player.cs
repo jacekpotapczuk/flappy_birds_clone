@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
     {
         if (godMode)
             return;
-
+        
         GameOverMenu.Instance.ShowEndGameMenu();
     }
 
@@ -56,9 +56,7 @@ public class Player : MonoBehaviour
 
     public void AddScore()
     {
-        //AudioManager.Instance.PlayOneShot("coin");
         AudioManager.Instance.Play("coin");
-
         score += 1;
         UpdateScoreText();
     }
