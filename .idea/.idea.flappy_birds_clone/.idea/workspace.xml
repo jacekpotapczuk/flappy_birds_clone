@@ -20,25 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1f07e12-e031-409a-a8f1-ffb498fef5e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player_idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player_idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png/road_asphalt89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/png/road_asphalt89.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +53,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TapTutorial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioToggle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +103,7 @@
       <workItem from="1609763379596" duration="5251000" />
       <workItem from="1609844216283" duration="8380000" />
       <workItem from="1609862084465" duration="7110000" />
-      <workItem from="1609932229368" duration="5102000" />
+      <workItem from="1609932229368" duration="5831000" />
     </task>
     <servers />
   </component>
