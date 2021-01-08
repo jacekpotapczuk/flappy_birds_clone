@@ -14,29 +14,49 @@ public class Player : MonoBehaviour
 
     [SerializeField] private Text scoreText;
 
+    
+    [SerializeField] private Sprite blueBird;
+    [SerializeField] private Sprite pinkBird;
+
     private bool godMode = false;
     private int score = 0;
 
     private Rigidbody2D rigidbody;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     private int clickCount = 0;
     
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        Physics2D.gravity = new Vector3(0f, 0f, 0f);
         animator = GetComponent<Animator>();
-        if(GameManager.Instance.BlueSkinSelected)
-            animator.SetBool("blueSkinSelected", true);
-        else
-            animator.SetBool("blueSkinSelected", false);
+        spriteRenderer = GetComponent<SpriteRenderer>();
+       
+        Physics2D.gravity = new Vector3(0f, 0f, 0f);
+
+
         Restart();
+    }
+
+    private void Start()
+    {
+        if (GameManager.Instance.BlueSkinSelected)
+        {
+            print("Bluee....");
+            animator.SetBool("blueSkinSelected", true);
+            spriteRenderer.sprite = blueBird;
+        }
+        else
+        {
+            print("Pinkkk....");
+            animator.SetBool("blueSkinSelected", false);
+            spriteRenderer.sprite = pinkBird;
+        }
     }
 
     private void Update()
     {
-
         if (Input.anyKeyDown && EventSystem.current.currentSelectedGameObject == null)
         {
             clickCount += 1;

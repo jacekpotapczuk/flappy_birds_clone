@@ -23,6 +23,8 @@ public class GameOverMenu : MonoBehaviour
     {
         AudioManager.Instance.MuteAll();
         AudioManager.Instance.Play("fail");
+        if (isBest)
+            AudioManager.Instance.Play("win");
         gameOverPanel.SetActive(true);
         newBest.SetActive(isBest);
         notNewBest.SetActive(!isBest);

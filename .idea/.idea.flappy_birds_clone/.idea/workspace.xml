@@ -20,8 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1f07e12-e031-409a-a8f1-ffb498fef5e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/player_blue.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/player_blue.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/player_idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/player_idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/player_pink.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/player_pink.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +51,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShowFPS.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.1.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/ToggleGroup.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -54,15 +65,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioToggle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SkinSelecter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BestScore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShowFPS.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BestScoreFileManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RepeatScroll.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +122,7 @@
       <workItem from="1609862084465" duration="7110000" />
       <workItem from="1609932229368" duration="5831000" />
       <workItem from="1610062361245" duration="5693000" />
-      <workItem from="1610097103502" duration="7917000" />
+      <workItem from="1610097103502" duration="10967000" />
     </task>
     <servers />
   </component>

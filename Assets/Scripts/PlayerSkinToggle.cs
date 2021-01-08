@@ -16,15 +16,11 @@ public class PlayerSkinToggle: MonoBehaviour
 
     public void ToggleBlueSkin(bool isOn)
     {
-        Debug.Log("Toggle Blue");
-        GameManager.Instance.BlueSkinSelected = true;
-        togglePink.isOn = !isOn;
+        GameManager.Instance.BlueSkinSelected = isOn;
     }
     
     public void TogglePinkSkin(bool isOn)
     {
-        Debug.Log("Toggle Pink");
-        GameManager.Instance.BlueSkinSelected = false;
-        toggleBlue.isOn = !isOn;
+        //GameManager.Instance.BlueSkinSelected = !isOn;
     }
 }

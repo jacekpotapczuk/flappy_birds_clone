@@ -267,6 +267,13 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
     actualVolume: 0
+  - name: win
+    clip: {fileID: 8300000, guid: 160a9ec2b5d965a4b9e42b157321a871, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    actualVolume: 0
 --- !u!4 &1307197184
 Transform:
   m_ObjectHideFlags: 0

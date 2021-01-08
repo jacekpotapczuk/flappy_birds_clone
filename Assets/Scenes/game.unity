@@ -2400,7 +2400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1023102494
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4233,6 +4233,8 @@ MonoBehaviour:
   - {fileID: 1576447934}
   clickForce: 6.5
   scoreText: {fileID: 1328190725}
+  blueBird: {fileID: 21300000, guid: 80ffc8845c627164097b79d22cf71644, type: 3}
+  pinkBird: {fileID: 21300000, guid: 0a12787ad398ffd4bb65e74a152d8ab6, type: 3}
 --- !u!95 &1762519668
 Animator:
   serializedVersion: 3
