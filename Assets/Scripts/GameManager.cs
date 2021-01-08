@@ -31,6 +31,20 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Menu", LoadSceneMode.Additive);
     }
     
+    public void LoadExitScreen()
+    {
+        UnloadCurrentScene();
+        SceneManager.LoadScene("Exit", LoadSceneMode.Additive);
+        StartCoroutine(QuitCoroutine());
+    }
+    
+    private IEnumerator QuitCoroutine()
+    {
+        Time.timeScale = 1f;  // make sure time is on
+        yield return new WaitForSeconds(0.5f);
+        Application.Quit();
+    }
+    
     public void LoadGame()
     {
         UnloadCurrentScene();

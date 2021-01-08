@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rigidbody;
     private Animator animator;
 
+    private bool firstClick = false;
+    
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -29,9 +31,8 @@ public class Player : MonoBehaviour
             animator.SetBool("blueSkinSelected", true);
         else
             animator.SetBool("blueSkinSelected", false);
-
-
         Restart();
+        Time.timeScale = 0f;
     }
 
     private void Update()
@@ -39,6 +40,7 @@ public class Player : MonoBehaviour
 
         if (Input.anyKeyDown && EventSystem.current.currentSelectedGameObject == null)
         {
+            firstClick = true;
             rigidbody.velocity = new Vector2(0f, clickForce);
             animator.SetBool("flap", true);
         }
@@ -46,6 +48,7 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("flap", false);
         }
+
     }
 
     private void OnCollisionEnter2D(Collision2D other)

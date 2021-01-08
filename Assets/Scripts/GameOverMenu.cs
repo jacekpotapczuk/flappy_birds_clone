@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -45,8 +45,22 @@ public class GameOverMenu : MonoBehaviour
 
     public void NewGame()
     {
-        gameOverPanel.SetActive(false);
+        //gameOverPanel.SetActive(false);
         Time.timeScale = 1f;
+        AudioManager.Instance.Play("click");
         GameManager.Instance.LoadGame();
+    }
+
+    public void Quit()
+    {
+        AudioManager.Instance.Play("click");
+        GameManager.Instance.LoadExitScreen();
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        AudioManager.Instance.Play("click");
+        GameManager.Instance.LoadMainMenu();
     }
 }
