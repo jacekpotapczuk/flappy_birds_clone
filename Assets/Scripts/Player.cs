@@ -20,19 +20,18 @@ public class Player : MonoBehaviour
     private Rigidbody2D rigidbody;
     private Animator animator;
 
-    private bool firstClick = false;
+    private int clickCount = 0;
     
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        Physics2D.gravity = new Vector3(0f, -20f, 0f);
+        Physics2D.gravity = new Vector3(0f, 0f, 0f);
         animator = GetComponent<Animator>();
         if(GameManager.Instance.BlueSkinSelected)
             animator.SetBool("blueSkinSelected", true);
         else
             animator.SetBool("blueSkinSelected", false);
         Restart();
-        Time.timeScale = 0f;
     }
 
     private void Update()
@@ -40,7 +39,7 @@ public class Player : MonoBehaviour
 
         if (Input.anyKeyDown && EventSystem.current.currentSelectedGameObject == null)
         {
-            firstClick = true;
+            clickCount += 1;
             rigidbody.velocity = new Vector2(0f, clickForce);
             animator.SetBool("flap", true);
         }
@@ -49,6 +48,17 @@ public class Player : MonoBehaviour
             animator.SetBool("flap", false);
         }
 
+        if (clickCount == 1)
+        {
+            Physics2D.gravity = new Vector3(0f, -20f, 0f);
+        }
+        if (clickCount >= 1)
+        {
+            foreach (RepeatScroll rs in scrollingObjects)
+            {
+                rs.UpdatePosition();
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)

@@ -18,7 +18,7 @@ public class RepeatScroll : MonoBehaviour
         ResetPosition();
     }
     
-    private void Update()
+    public void UpdatePosition()
     {
         for (int i = 0; i < objects.Length; i++)
         {
