@@ -4,7 +4,7 @@ public class MainMenu : MonoBehaviour
 {
     public void LoadGame ()
     {
-        GameManager.Instance.LoadGame();
+        GameManager.Instance.LoadBasic("Game");
         AudioManager.Instance.Play("click");
     }
 

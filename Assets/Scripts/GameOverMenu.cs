@@ -48,7 +48,7 @@ public class GameOverMenu : MonoBehaviour
         //gameOverPanel.SetActive(false);
         Time.timeScale = 1f;
         AudioManager.Instance.Play("click");
-        GameManager.Instance.LoadGame();
+        GameManager.Instance.LoadBasic("Game");
     }
 
     public void Quit()
@@ -61,6 +61,6 @@ public class GameOverMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         AudioManager.Instance.Play("click");
-        GameManager.Instance.LoadMainMenu();
+        GameManager.Instance.LoadBasic("Menu");
     }
 }

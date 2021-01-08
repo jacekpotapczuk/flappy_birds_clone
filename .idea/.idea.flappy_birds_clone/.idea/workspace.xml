@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1f07e12-e031-409a-a8f1-ffb498fef5e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RepeatScroll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RepeatScroll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +58,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BestScore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShowFPS.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BestScoreFileManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RepeatScroll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +111,7 @@
       <workItem from="1609862084465" duration="7110000" />
       <workItem from="1609932229368" duration="5831000" />
       <workItem from="1610062361245" duration="5693000" />
-      <workItem from="1610097103502" duration="7436000" />
+      <workItem from="1610097103502" duration="7917000" />
     </task>
     <servers />
   </component>
