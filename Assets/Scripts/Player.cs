@@ -13,8 +13,7 @@ public class Player : MonoBehaviour
     private float clickForce = 5f;
 
     [SerializeField] private Text scoreText;
-    [SerializeField] private Text bestScoreText;
-    
+
     private bool godMode = false;
     private int score = 0;
 
@@ -32,9 +31,6 @@ public class Player : MonoBehaviour
             animator.SetBool("blueSkinSelected", false);
 
 
-        bestScoreText.text = BestScore.Instance.Score.ToString();
-        
-        
         Restart();
     }
 
@@ -56,8 +52,13 @@ public class Player : MonoBehaviour
     {
         if (godMode)
             return;
-        
-        GameOverMenu.Instance.ShowEndGameMenu();
+
+        bool isBest = score > BestScoreFileManager.Instance.Score; 
+        if (isBest)
+        {
+            BestScoreFileManager.Instance.SaveScore(score);
+        }
+        GameOverMenu.Instance.ShowEndGameMenu(isBest, score, BestScoreFileManager.Instance.Score);
     }
 
 
@@ -76,20 +77,11 @@ public class Player : MonoBehaviour
     private void UpdateScoreText()
     {
         scoreText.text = score.ToString();
-        
-        if (score > BestScore.Instance.Score)
-        {
-            Debug.Log("Nowy najlepszyu score!");
-            BestScore.Instance.SaveScore(score);
-            bestScoreText.text = score.ToString();
-        }
     }
 
     private void Restart()
     {        
         transform.localPosition = new Vector3(-1.65f, 1.25f, 0f);
-
-
         
         score = 0;
         AudioManager.Instance.Play("main");

@@ -1,29 +1,51 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 
 public class GameOverMenu : MonoBehaviour
 {
-    public GameObject pauseMenuUI;
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject newBest;
+    [SerializeField] private GameObject notNewBest;
+
+    [SerializeField] private TextMeshProUGUI[] bestScoreTexts;
+    [SerializeField] private TextMeshProUGUI[] currentScoreTexts;
 
     public static GameOverMenu Instance {get; private set; }
 
     private void Awake()
     {
         Instance = this;
-        pauseMenuUI.SetActive(false);
+        gameOverPanel.SetActive(false);
     }
 
-    public void ShowEndGameMenu()
+    public void ShowEndGameMenu(bool isBest, int current, int best)
     {
         AudioManager.Instance.MuteAll();
         AudioManager.Instance.Play("fail");
-        pauseMenuUI.SetActive(true);
+        gameOverPanel.SetActive(true);
+        newBest.SetActive(isBest);
+        notNewBest.SetActive(!isBest);
+
+        string bestStr = best.ToString();
+        foreach (TextMeshProUGUI t in bestScoreTexts)
+        {
+            t.text = bestStr;
+        }
+        
+        string currentStr = current.ToString();
+        foreach (TextMeshProUGUI t in currentScoreTexts)
+        {
+            t.text = currentStr;
+        }
+
+        
         Time.timeScale = 0f;
     }
 
     public void NewGame()
     {
-        pauseMenuUI.SetActive(true);
+        gameOverPanel.SetActive(false);
         Time.timeScale = 1f;
         GameManager.Instance.LoadGame();
     }

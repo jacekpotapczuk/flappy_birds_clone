@@ -2,20 +2,21 @@
 using System.IO;
 using UnityEngine;
 
-public class BestScore : MonoBehaviour
+public class BestScoreFileManager : MonoBehaviour
 {
     
-    public static BestScore Instance { get; private set; }
+    public static BestScoreFileManager Instance { get; private set; }
 
-    public int Score { get; set; }
+    public int Score { get; private set; }
 
     private string fileName;
+    
     void Awake()
     {
         Instance = this;
-        fileName = Application.persistentDataPath + "/fb_save";
-        
+        fileName = Path.Combine(Application.persistentDataPath, "fb_save");
 
+        Debug.Log(fileName);
         if (File.Exists(fileName))
         {
             using (BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)))
