@@ -42,8 +42,8 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator QuitCoroutine()
     {
-        Time.timeScale = 1f;  // make sure time is on
-        yield return new WaitForSeconds(0.5f);
+        Time.timeScale = 1f;  // make sure time is on again
+        yield return new WaitForSeconds(1.2f);
         Application.Quit();
     }
     

@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
        
         Physics2D.gravity = new Vector3(0f, 0f, 0f);
 
-
+        animator.enabled = false;
         Restart();
     }
 
@@ -57,6 +57,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        bool a = animator.GetBool("blueSkinSelected");
+        bool b = animator.GetBool("flap");
+        Debug.Log($"1: {a}, 2: {b}");
         if (Input.anyKeyDown && EventSystem.current.currentSelectedGameObject == null)
         {
             clickCount += 1;
@@ -71,6 +74,8 @@ public class Player : MonoBehaviour
         if (clickCount == 1)
         {
             Physics2D.gravity = new Vector3(0f, -20f, 0f);
+            AudioManager.Instance.Play("main");
+            animator.enabled = true;
         }
         if (clickCount >= 1)
         {
@@ -117,7 +122,6 @@ public class Player : MonoBehaviour
         transform.localPosition = new Vector3(-1.65f, 1.25f, 0f);
         
         score = 0;
-        AudioManager.Instance.Play("main");
         UpdateScoreText();
 
         for (int i = 0; i < scrollingObjects.Length; i++)
