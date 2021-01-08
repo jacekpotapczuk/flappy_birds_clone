@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    public bool BlueSkinSelected { get; set; }
+    
     private Scene? currentlyLoadedScene;
 
     private void Awake()

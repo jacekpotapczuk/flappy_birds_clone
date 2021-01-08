@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design.Serialization;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class Player : MonoBehaviour
     private float clickForce = 5f;
 
     [SerializeField] private Text scoreText;
+    [SerializeField] private Text bestScoreText;
+    
     private bool godMode = false;
     private int score = 0;
 
@@ -23,6 +26,15 @@ public class Player : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         Physics2D.gravity = new Vector3(0f, -20f, 0f);
         animator = GetComponent<Animator>();
+        if(GameManager.Instance.BlueSkinSelected)
+            animator.SetBool("blueSkinSelected", true);
+        else
+            animator.SetBool("blueSkinSelected", false);
+
+
+        bestScoreText.text = BestScore.Instance.Score.ToString();
+        
+        
         Restart();
     }
 
@@ -64,11 +76,21 @@ public class Player : MonoBehaviour
     private void UpdateScoreText()
     {
         scoreText.text = score.ToString();
+        
+        if (score > BestScore.Instance.Score)
+        {
+            Debug.Log("Nowy najlepszyu score!");
+            BestScore.Instance.SaveScore(score);
+            bestScoreText.text = score.ToString();
+        }
     }
 
     private void Restart()
     {        
         transform.localPosition = new Vector3(-1.65f, 1.25f, 0f);
+
+
+        
         score = 0;
         AudioManager.Instance.Play("main");
         UpdateScoreText();
