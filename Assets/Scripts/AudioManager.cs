@@ -34,9 +34,9 @@ public class AudioManager : MonoBehaviour
         if (s == null)
         {
             Debug.LogError($"Sound {name} not found");
-            
             return;
         }
+        
         s.source.Play();
     }
 

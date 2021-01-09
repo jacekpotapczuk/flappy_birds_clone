@@ -20,11 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1f07e12-e031-409a-a8f1-ffb498fef5e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/idle_blue.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/idle_blue.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/idle_pink.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/idle_pink.anim.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +61,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TapTutorial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioToggle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SkinSelecter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BestScore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShowFPS.cs" />
@@ -64,9 +68,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RepeatScroll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CheckAnimationStatus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Example.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +123,7 @@
       <workItem from="1609932229368" duration="5831000" />
       <workItem from="1610062361245" duration="5693000" />
       <workItem from="1610097103502" duration="11684000" />
-      <workItem from="1610144396982" duration="1012000" />
+      <workItem from="1610144396982" duration="6753000" />
     </task>
     <servers />
   </component>

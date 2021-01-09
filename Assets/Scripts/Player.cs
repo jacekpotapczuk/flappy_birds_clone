@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     private int clickCount = 0;
+    private bool movementInitialized = false;
     
     private void Awake()
     {
@@ -43,13 +44,11 @@ public class Player : MonoBehaviour
     {
         if (GameManager.Instance.BlueSkinSelected)
         {
-            print("Bluee....");
             animator.SetBool("blueSkinSelected", true);
             spriteRenderer.sprite = blueBird;
         }
         else
         {
-            print("Pinkkk....");
             animator.SetBool("blueSkinSelected", false);
             spriteRenderer.sprite = pinkBird;
         }
@@ -57,9 +56,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        bool a = animator.GetBool("blueSkinSelected");
-        bool b = animator.GetBool("flap");
-        Debug.Log($"1: {a}, 2: {b}");
         if (Input.anyKeyDown && EventSystem.current.currentSelectedGameObject == null)
         {
             clickCount += 1;
@@ -71,8 +67,9 @@ public class Player : MonoBehaviour
             animator.SetBool("flap", false);
         }
 
-        if (clickCount == 1)
+        if (clickCount == 1 && !movementInitialized)
         {
+            movementInitialized = true;
             Physics2D.gravity = new Vector3(0f, -20f, 0f);
             AudioManager.Instance.Play("main");
             animator.enabled = true;
