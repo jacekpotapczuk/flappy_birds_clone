@@ -7,7 +7,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D), typeof(Animator))]
 public class Player : MonoBehaviour
 {
-    [SerializeField] private RepeatScroll[] scrollingObjects;
+    [SerializeField] private RepeatScroll[] scrollingObjects; // all objects that are moving on screen, we update them
+    // from Player so they don't move unless we know player is ready. Also this is faster than using unity's Update
+    // for every object.
     
     [SerializeField, Range(0f, 20f)]
     private float clickForce = 5f;
@@ -16,16 +18,15 @@ public class Player : MonoBehaviour
     [SerializeField] private Sprite pinkBird;
 
     [SerializeField] private Score score;
-
-    private bool godMode = false;
-
+    
     private Rigidbody2D rigidbody;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
-    private int clickCount = 0;
+    private bool playerClicked = false;
     private bool movementInitialized = false;
-    
+    private bool godMode = false;  // make player immortal, this option is hidden in game window at the bottom left corner
+
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -56,7 +57,7 @@ public class Player : MonoBehaviour
     {
         if (Input.anyKeyDown && EventSystem.current.currentSelectedGameObject == null)
         {
-            clickCount += 1;
+            playerClicked = true;
             rigidbody.velocity = new Vector2(0f, clickForce);
             animator.SetBool("flap", true);
         }
@@ -65,19 +66,22 @@ public class Player : MonoBehaviour
             animator.SetBool("flap", false);
         }
 
-        if (clickCount == 1 && !movementInitialized)
-        {
-            movementInitialized = true;
-            Physics2D.gravity = new Vector3(0f, -20f, 0f);
-            AudioManager.Instance.Play("main");
-            animator.enabled = true;
-        }
-        if (clickCount >= 1)
+        if (!playerClicked)
+            return;
+                
+        if (movementInitialized)
         {
             foreach (RepeatScroll rs in scrollingObjects)
             {
                 rs.UpdatePosition();
             }
+        }
+        else
+        {
+            movementInitialized = true;
+            Physics2D.gravity = new Vector3(0f, -20f, 0f);
+            AudioManager.Instance.Play("main");
+            animator.enabled = true;
         }
     }
 

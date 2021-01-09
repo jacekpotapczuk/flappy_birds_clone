@@ -32,7 +32,6 @@ public class BestScoreFileManager : MonoBehaviour
             }
             Score = 0;
         }
-        
     }
 
     public void SaveScore(int score)
@@ -41,6 +40,15 @@ public class BestScoreFileManager : MonoBehaviour
         using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.Open)))
         {
             writer.Write(score);
+        }
+    }
+
+    public void DeleteSave()
+    {
+        Score = 0;
+        using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.Open)))
+        {
+            writer.Write(0);
         }
     }
     

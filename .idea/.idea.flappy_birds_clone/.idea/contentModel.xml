@@ -12,6 +12,7 @@
           <e p="BestScoreFileManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="GameOverMenu.cs" t="Include" />
+          <e p="HoldButton.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="Pipe.cs" t="Include" />
           <e p="Player.cs" t="Include" />
