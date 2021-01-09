@@ -14,18 +14,18 @@ public class PlayerSkinToggle: MonoBehaviour
 
     
     private bool isInit = true;
+    
     private void Start()
     {
-        Debug.Log("start");
-        toggleBlue.isOn = GameManager.Instance.BlueSkinSelected;
-        togglePink.isOn = !GameManager.Instance.BlueSkinSelected;
+        Debug.Log($"start: {GameManager.Instance.BlueSkinSelected}");
+        toggleBlue.isOn = true;
+        togglePink.isOn = false;
         
     }
     
 
     public void ToggleBlueSkin(bool isOn)
     {
-        Debug.Log("Zmaina");
         GameManager.Instance.BlueSkinSelected = isOn;
         
         // when loading a scene this toggle isOn as default and that means that unity calls this function, even when user

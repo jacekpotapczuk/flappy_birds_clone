@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        BlueSkinSelected = true;
         LoadBasic("Menu");
 
         SceneManager.sceneLoaded += this.OnSceneLoaded;
