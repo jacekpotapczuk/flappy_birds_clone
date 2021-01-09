@@ -13,7 +13,7 @@ public class Pipe : MonoBehaviour
     public float resetX = 4.5f;
 
     
-    public Player player;
+    public Score score;
     
     private bool didScore = false;
     private bool didReset = false;
@@ -22,7 +22,7 @@ public class Pipe : MonoBehaviour
     {
         if (transform.localPosition.x <= scoringX && !didScore)
         {
-            player.AddScore();
+            score.AddPoint();
             didScore = true;
             didReset = false;
         }

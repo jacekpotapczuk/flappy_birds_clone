@@ -12,14 +12,12 @@ public class Player : MonoBehaviour
     [SerializeField, Range(0f, 20f)]
     private float clickForce = 5f;
 
-    [SerializeField] private Text scoreText;
-
-    
     [SerializeField] private Sprite blueBird;
     [SerializeField] private Sprite pinkBird;
 
+    [SerializeField] private Score score;
+
     private bool godMode = false;
-    private int score = 0;
 
     private Rigidbody2D rigidbody;
     private Animator animator;
@@ -88,12 +86,7 @@ public class Player : MonoBehaviour
         if (godMode)
             return;
 
-        bool isBest = score > BestScoreFileManager.Instance.Score; 
-        if (isBest)
-        {
-            BestScoreFileManager.Instance.SaveScore(score);
-        }
-        GameOverMenu.Instance.ShowEndGameMenu(isBest, score, BestScoreFileManager.Instance.Score);
+        score.OnPlayerDeath();
     }
 
 
@@ -101,25 +94,13 @@ public class Player : MonoBehaviour
     {
         godMode = b;
     }
-
-    public void AddScore()
-    {
-        AudioManager.Instance.Play("coin");
-        score += 1;
-        UpdateScoreText();
-    }
-
-    private void UpdateScoreText()
-    {
-        scoreText.text = score.ToString();
-    }
+    
 
     private void Restart()
     {        
         transform.localPosition = new Vector3(-1.65f, 1.25f, 0f);
         
-        score = 0;
-        UpdateScoreText();
+        score.OnRestart();
 
         for (int i = 0; i < scrollingObjects.Length; i++)
         {

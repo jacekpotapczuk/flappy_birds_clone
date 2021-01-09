@@ -17,6 +17,7 @@
           <e p="Player.cs" t="Include" />
           <e p="PlayerSkinToggle.cs" t="Include" />
           <e p="RepeatScroll.cs" t="Include" />
+          <e p="Score.cs" t="Include" />
           <e p="ShowGodModeText.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
           <e p="TapTutorial.cs" t="Include" />
