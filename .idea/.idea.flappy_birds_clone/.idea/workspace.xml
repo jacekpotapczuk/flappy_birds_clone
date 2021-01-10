@@ -23,9 +23,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.flappy_birds_clone/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BestScoreFileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BestScoreFileManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HoldButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HoldButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pipe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Score.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png/right - Copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/png/right - Copy.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HoldButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TapTutorial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveFileDeleter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioToggle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pipe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Score.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,15 +73,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameOverMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CheckAnimationStatus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Example.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShowGodModeText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSkinToggle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveFileDeleter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Score.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BestScoreFileManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HoldButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BestScoreFileManager.cs" />
       </list>
     </option>
   </component>
@@ -124,7 +133,8 @@
       <workItem from="1610062361245" duration="5693000" />
       <workItem from="1610097103502" duration="11684000" />
       <workItem from="1610144396982" duration="7643000" />
-      <workItem from="1610189620990" duration="6067000" />
+      <workItem from="1610189620990" duration="6922000" />
+      <workItem from="1610269245245" duration="3205000" />
     </task>
     <servers />
   </component>

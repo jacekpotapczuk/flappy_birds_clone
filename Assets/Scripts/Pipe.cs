@@ -2,18 +2,17 @@
 
 public class Pipe : MonoBehaviour
 {
-    // TODO: sprawdzic co public, co private
-    public float heightMin = -2.2f;
-    public float heightMax = 2.2f;
     
-    public Transform downPart; // TODO: wykorzystac to przy poziomie trudnosci
-    public Transform upperPart;
-
-    public float scoringX = -4.5f;
-    public float resetX = 4.5f;
-
+    [SerializeField] private float heightMin = -2.2f;
+    [SerializeField] private float heightMax = 2.2f;
     
-    public Score score;
+    [SerializeField] private Transform downPart; 
+    [SerializeField] private Transform upperPart;
+
+    [SerializeField] private float scoringX = -4.5f;
+    [SerializeField] private float resetX = 4.5f;
+    
+    [SerializeField] private Score score;
     
     private bool didScore = false;
     private bool didReset = false;

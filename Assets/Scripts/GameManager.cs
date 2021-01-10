@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+// singleton gameManager. It's placed in main scene that is always loaded, all the other are swapped. It's main job
+// is to swap scenes but it also holds info that needs to be persisted between scenes (like which skin is selected)
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }

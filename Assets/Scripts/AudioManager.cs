@@ -2,6 +2,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+
+// singleton audio manager that holds references to all the sounds and plays them when Play method is used. For a more 
+// robust game this is not the best idea, but works perfectly in a small game.
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }

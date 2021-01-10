@@ -241,14 +241,14 @@ MonoBehaviour:
   sounds:
   - name: coin
     clip: {fileID: 8300000, guid: a6eccbe4cf1386b498cb39f1e0f662fb, type: 3}
-    volume: 0.4
+    volume: 0.2
     pitch: 1
     loop: 0
     source: {fileID: 0}
     actualVolume: 0
   - name: main
     clip: {fileID: 8300000, guid: 00a25b3ccadb28840a47b222ef6f3d96, type: 3}
-    volume: 0.5
+    volume: 0.4
     pitch: 1
     loop: 1
     source: {fileID: 0}

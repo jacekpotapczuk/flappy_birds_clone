@@ -2,6 +2,9 @@
 using System.IO;
 using UnityEngine;
 
+
+// create save files, for this game it's just saving one int and that could be done simpler using PlayerPrefs, but I 
+// wanted to try this way which is probably better when you want to save a lot of things?
 public class BestScoreFileManager : MonoBehaviour
 {
     
@@ -15,8 +18,7 @@ public class BestScoreFileManager : MonoBehaviour
     {
         Instance = this;
         fileName = Path.Combine(Application.persistentDataPath, "fb_save");
-
-        Debug.Log(fileName);
+        
         if (File.Exists(fileName))
         {
             using (BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)))
